@@ -123,7 +123,7 @@ mach_inject(
 			ASSERT_CAST( pointer_t, paramBlock );
 			err = vm_write( remoteTask, remoteParamBlock,
                            (pointer_t) paramBlock, paramSize );
-			printf("wrote param with size %d\n", paramSize);
+            printf("wrote param with size %zu\n", paramSize);
 		}
 	}
     
